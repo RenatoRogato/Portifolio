@@ -1,0 +1,23 @@
+Como Estruturar um site no figma
+
+1 criar um frame
+2 Renomeia esse frame como a "pagina principal" ou "landing_page" e  configura largura 1920, essa é a pagina do site
+3 cria um frame de seção dentro do frame inicial
+4 após criado a seção, clica na no frame da pagina e clica em auto layout
+5 clica no frame da pagina e configura largura como 1920, opção fixed, altura configura como hug
+6 clica no frame da seção e coloca auto layout
+7 clica novamente no frame da pagina e coloca 0, "zera" as margens
+
+*Para duplicar as seções usa crtl+D
+
+*Sempre trabalhar com grid
+1 No frame da pagina insere um grid
+2 seleciona coluna, 12 colunas e margem de 390
+3 seleciona o frame da seção e coloca a margem como 390 também, para que o conteúdo das seções fique dentro das 12 colunas
+
+Após essas configurações insere a margem de altura na preferencia
+
+usar alto layout nos conteúdos também para padronização
+
+usar frames nos conteúdos para preencher todo o espaço
+

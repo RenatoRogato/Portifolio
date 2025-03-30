@@ -1,0 +1,958 @@
+{
+  "tags": [
+    {
+      "name": "_PLC_",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "name": "_Diagnostics_",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "valueSource": "opc",
+              "opcItemPath": "ns\u003d1;s\u003d[PLC][Diagnostics]/Hostname",
+              "dataType": "String",
+              "name": "Hostname",
+              "tagType": "AtomicTag",
+              "opcServer": "Ignition OPC UA Server"
+            },
+            {
+              "valueSource": "opc",
+              "opcItemPath": "ns\u003d1;s\u003d[PLC][Diagnostics]/Name",
+              "dataType": "String",
+              "name": "Name",
+              "tagType": "AtomicTag",
+              "opcServer": "Ignition OPC UA Server"
+            },
+            {
+              "name": "Sampling",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "valueSource": "opc",
+                  "opcItemPath": "ns\u003d1;s\u003d[PLC][Diagnostics]/Sampling/MonitoredItemCount",
+                  "dataType": "Int8",
+                  "name": "MonitoredItemCount",
+                  "tagType": "AtomicTag",
+                  "opcServer": "Ignition OPC UA Server"
+                },
+                {
+                  "name": "Aggregate",
+                  "tagType": "Folder",
+                  "tags": [
+                    {
+                      "valueSource": "opc",
+                      "opcItemPath": "ns\u003d1;s\u003d[PLC][Diagnostics]/Sampling/Aggregate/RequestCount",
+                      "dataType": "Int8",
+                      "name": "RequestCount",
+                      "tagType": "AtomicTag",
+                      "opcServer": "Ignition OPC UA Server"
+                    },
+                    {
+                      "name": "ExecutionTimer",
+                      "tagType": "Folder",
+                      "tags": [
+                        {
+                          "valueSource": "opc",
+                          "opcItemPath": "ns\u003d1;s\u003d[PLC][Diagnostics]/Sampling/Aggregate/ExecutionTimer.Min",
+                          "dataType": "Int8",
+                          "name": "Min",
+                          "tagType": "AtomicTag",
+                          "opcServer": "Ignition OPC UA Server"
+                        },
+                        {
+                          "valueSource": "opc",
+                          "opcItemPath": "ns\u003d1;s\u003d[PLC][Diagnostics]/Sampling/Aggregate/ExecutionTimer.Max",
+                          "dataType": "Int8",
+                          "name": "Max",
+                          "tagType": "AtomicTag",
+                          "opcServer": "Ignition OPC UA Server"
+                        },
+                        {
+                          "valueSource": "opc",
+                          "opcItemPath": "ns\u003d1;s\u003d[PLC][Diagnostics]/Sampling/Aggregate/ExecutionTimer.Mean",
+                          "dataType": "Float8",
+                          "name": "Mean",
+                          "tagType": "AtomicTag",
+                          "opcServer": "Ignition OPC UA Server"
+                        },
+                        {
+                          "valueSource": "opc",
+                          "opcItemPath": "ns\u003d1;s\u003d[PLC][Diagnostics]/Sampling/Aggregate/ExecutionTimer.95thPercentile",
+                          "dataType": "Float8",
+                          "name": "95thPercentile",
+                          "tagType": "AtomicTag",
+                          "opcServer": "Ignition OPC UA Server"
+                        },
+                        {
+                          "valueSource": "opc",
+                          "opcItemPath": "ns\u003d1;s\u003d[PLC][Diagnostics]/Sampling/Aggregate/ExecutionTimer.98thPercentile",
+                          "dataType": "Float8",
+                          "name": "98thPercentile",
+                          "tagType": "AtomicTag",
+                          "opcServer": "Ignition OPC UA Server"
+                        },
+                        {
+                          "valueSource": "opc",
+                          "opcItemPath": "ns\u003d1;s\u003d[PLC][Diagnostics]/Sampling/Aggregate/ExecutionTimer.75thPercentile",
+                          "dataType": "Float8",
+                          "name": "75thPercentile",
+                          "tagType": "AtomicTag",
+                          "opcServer": "Ignition OPC UA Server"
+                        },
+                        {
+                          "valueSource": "opc",
+                          "opcItemPath": "ns\u003d1;s\u003d[PLC][Diagnostics]/Sampling/Aggregate/ExecutionTimer.OneMinuteRate",
+                          "dataType": "Float8",
+                          "name": "OneMinuteRate",
+                          "tagType": "AtomicTag",
+                          "opcServer": "Ignition OPC UA Server"
+                        },
+                        {
+                          "valueSource": "opc",
+                          "opcItemPath": "ns\u003d1;s\u003d[PLC][Diagnostics]/Sampling/Aggregate/ExecutionTimer.FiveMinuteRate",
+                          "dataType": "Float8",
+                          "name": "FiveMinuteRate",
+                          "tagType": "AtomicTag",
+                          "opcServer": "Ignition OPC UA Server"
+                        },
+                        {
+                          "valueSource": "opc",
+                          "opcItemPath": "ns\u003d1;s\u003d[PLC][Diagnostics]/Sampling/Aggregate/ExecutionTimer.MeanRate",
+                          "dataType": "Float8",
+                          "name": "MeanRate",
+                          "tagType": "AtomicTag",
+                          "opcServer": "Ignition OPC UA Server"
+                        },
+                        {
+                          "valueSource": "opc",
+                          "opcItemPath": "ns\u003d1;s\u003d[PLC][Diagnostics]/Sampling/Aggregate/ExecutionTimer.Count",
+                          "dataType": "Int8",
+                          "name": "Count",
+                          "tagType": "AtomicTag",
+                          "opcServer": "Ignition OPC UA Server"
+                        },
+                        {
+                          "valueSource": "opc",
+                          "opcItemPath": "ns\u003d1;s\u003d[PLC][Diagnostics]/Sampling/Aggregate/ExecutionTimer.99thPercentile",
+                          "dataType": "Float8",
+                          "name": "99thPercentile",
+                          "tagType": "AtomicTag",
+                          "opcServer": "Ignition OPC UA Server"
+                        }
+                      ]
+                    },
+                    {
+                      "valueSource": "opc",
+                      "opcItemPath": "ns\u003d1;s\u003d[PLC][Diagnostics]/Sampling/Aggregate/ActualThroughput",
+                      "dataType": "Float8",
+                      "name": "ActualThroughput",
+                      "tagType": "AtomicTag",
+                      "opcServer": "Ignition OPC UA Server"
+                    },
+                    {
+                      "valueSource": "opc",
+                      "opcItemPath": "ns\u003d1;s\u003d[PLC][Diagnostics]/Sampling/Aggregate/IdealThroughput",
+                      "dataType": "Float8",
+                      "name": "IdealThroughput",
+                      "tagType": "AtomicTag",
+                      "opcServer": "Ignition OPC UA Server"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "valueSource": "opc",
+              "opcItemPath": "ns\u003d1;s\u003d[PLC][Diagnostics]/Port",
+              "dataType": "Int4",
+              "name": "Port",
+              "tagType": "AtomicTag",
+              "opcServer": "Ignition OPC UA Server"
+            },
+            {
+              "valueSource": "opc",
+              "opcItemPath": "ns\u003d1;s\u003d[PLC][Diagnostics]/State",
+              "dataType": "String",
+              "name": "State",
+              "tagType": "AtomicTag",
+              "opcServer": "Ignition OPC UA Server"
+            },
+            {
+              "valueSource": "opc",
+              "opcItemPath": "ns\u003d1;s\u003d[PLC][Diagnostics]/Status",
+              "dataType": "String",
+              "name": "Status",
+              "tagType": "AtomicTag",
+              "opcServer": "Ignition OPC UA Server"
+            },
+            {
+              "valueSource": "opc",
+              "opcItemPath": "ns\u003d1;s\u003d[PLC][Diagnostics]/Connected",
+              "dataType": "Boolean",
+              "name": "Connected",
+              "tagType": "AtomicTag",
+              "opcServer": "Ignition OPC UA Server"
+            }
+          ]
+        },
+        {
+          "name": "UnitId 0",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "name": "DJ3_ON42-DJ3_ON42",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "valueSource": "opc",
+                  "opcItemPath": "ns\u003d1;s\u003d[PLC]DJ3_ON42",
+                  "dataType": "Boolean",
+                  "historyProvider": "UMS_DB",
+                  "name": "DJ3_ON42",
+                  "historyEnabled": false,
+                  "tagType": "AtomicTag",
+                  "opcServer": "Ignition OPC UA Server"
+                }
+              ]
+            },
+            {
+              "name": "TU_TRIP23-TU_TRIP23",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "valueSource": "opc",
+                  "opcItemPath": "ns\u003d1;s\u003d[PLC]TU_TRIP23",
+                  "dataType": "Boolean",
+                  "historyProvider": "UMS_DB",
+                  "alarms": [
+                    {
+                      "mode": "OnCondition",
+                      "name": "TU TRIP",
+                      "label": "Trip Unit Trip",
+                      "priority": "Critical",
+                      "activeCondition": {
+                        "bindType": "Tag",
+                        "value": "[.]TU_TRIP23.value"
+                      }
+                    }
+                  ],
+                  "name": "TU_TRIP23",
+                  "historyEnabled": true,
+                  "tagType": "AtomicTag",
+                  "opcServer": "Ignition OPC UA Server"
+                }
+              ]
+            },
+            {
+              "name": "TempChiller24-TempChiller24",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "valueSource": "opc",
+                  "opcItemPath": "ns\u003d1;s\u003d[PLC]TempChiller24",
+                  "dataType": "Boolean",
+                  "historyProvider": "UMS_DB",
+                  "alarms": [
+                    {
+                      "mode": "OnCondition",
+                      "timeOnDelaySeconds": 60.0,
+                      "name": "Chiller \u003e T limit",
+                      "label": "Chiller Above Temperature",
+                      "priority": "Critical",
+                      "activeCondition": {
+                        "bindType": "Tag",
+                        "value": "[.]TempChiller24.value"
+                      }
+                    }
+                  ],
+                  "name": "TempChiller24",
+                  "historyEnabled": true,
+                  "tagType": "AtomicTag",
+                  "opcServer": "Ignition OPC UA Server"
+                }
+              ]
+            },
+            {
+              "name": "DJ1_OFF35-DJ1_OFF35",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "valueSource": "opc",
+                  "opcItemPath": "ns\u003d1;s\u003d[PLC]DJ1_OFF35",
+                  "dataType": "Boolean",
+                  "historyProvider": "UMS_DB",
+                  "name": "DJ1_OFF35",
+                  "historyEnabled": false,
+                  "tagType": "AtomicTag",
+                  "opcServer": "Ignition OPC UA Server"
+                }
+              ]
+            },
+            {
+              "name": "DJ2_ON39-DJ2_ON39",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "valueSource": "opc",
+                  "opcItemPath": "ns\u003d1;s\u003d[PLC]DJ2_ON39",
+                  "dataType": "Boolean",
+                  "historyProvider": "UMS_DB",
+                  "name": "DJ2_ON39",
+                  "historyEnabled": false,
+                  "tagType": "AtomicTag",
+                  "opcServer": "Ignition OPC UA Server"
+                }
+              ]
+            },
+            {
+              "name": "P_PUMP25-P_PUMP25",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "valueSource": "opc",
+                  "opcItemPath": "ns\u003d1;s\u003d[PLC]P_PUMP25",
+                  "dataType": "Boolean",
+                  "historyProvider": "UMS_DB",
+                  "alarms": [
+                    {
+                      "mode": "OnCondition",
+                      "timeOnDelaySeconds": 60.0,
+                      "name": "Chiller Pump \u003e P",
+                      "label": "Chiller Pump above Pressure",
+                      "priority": "Critical",
+                      "activeCondition": {
+                        "bindType": "Tag",
+                        "value": "[.]../RELAY19-RELAY19/RELAY19.value"
+                      }
+                    }
+                  ],
+                  "name": "P_PUMP25",
+                  "historyEnabled": true,
+                  "tagType": "AtomicTag",
+                  "opcServer": "Ignition OPC UA Server"
+                }
+              ]
+            },
+            {
+              "name": "DJ1_ON36-DJ1_ON36",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "valueSource": "opc",
+                  "opcItemPath": "ns\u003d1;s\u003d[PLC]DJ1_ON36",
+                  "dataType": "Boolean",
+                  "historyProvider": "UMS_DB",
+                  "name": "DJ1_ON36",
+                  "historyEnabled": false,
+                  "tagType": "AtomicTag",
+                  "opcServer": "Ignition OPC UA Server"
+                }
+              ]
+            },
+            {
+              "name": "I_VN18-I_VN18",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "valueSource": "opc",
+                  "opcItemPath": "ns\u003d1;s\u003d[PLC]I_VN18",
+                  "dataType": "Boolean",
+                  "historyProvider": "UMS_DB",
+                  "alarms": [
+                    {
+                      "mode": "OnCondition",
+                      "timeOnDelaySeconds": 30.0,
+                      "name": "I_VN Above Limits",
+                      "label": "I_VN Above Limits",
+                      "displayPath": "",
+                      "priority": "High",
+                      "ackNotesReqd": false,
+                      "activeCondition": {
+                        "bindType": "Tag",
+                        "value": "[.]../RELAY19-RELAY19/RELAY19.value"
+                      }
+                    }
+                  ],
+                  "name": "I_VN18",
+                  "historyEnabled": true,
+                  "tagType": "AtomicTag",
+                  "opcServer": "Ignition OPC UA Server"
+                }
+              ]
+            },
+            {
+              "name": "TEMP_COMP27-TEMP_COMP27",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "valueSource": "opc",
+                  "opcItemPath": "ns\u003d1;s\u003d[PLC]TEMP_COMP27",
+                  "dataType": "Boolean",
+                  "historyProvider": "UMS_DB",
+                  "alarms": [
+                    {
+                      "mode": "OnCondition",
+                      "timeOnDelaySeconds": 60.0,
+                      "name": "Compressor \u003e T",
+                      "label": "Compressor Above Temperarure",
+                      "priority": "Critical",
+                      "activeCondition": {
+                        "bindType": "Expression",
+                        "value": "if({[.]TEMP_COMP27}\u003dtrue,true,false)"
+                      }
+                    }
+                  ],
+                  "name": "TEMP_COMP27",
+                  "historyEnabled": true,
+                  "tagType": "AtomicTag",
+                  "opcServer": "Ignition OPC UA Server"
+                }
+              ]
+            },
+            {
+              "name": "DJ3_OFF41-DJ3_OFF41",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "valueSource": "opc",
+                  "opcItemPath": "ns\u003d1;s\u003d[PLC]DJ3_OFF41",
+                  "dataType": "Boolean",
+                  "historyProvider": "UMS_DB",
+                  "name": "DJ3_OFF41",
+                  "historyEnabled": false,
+                  "tagType": "AtomicTag",
+                  "opcServer": "Ignition OPC UA Server"
+                }
+              ]
+            },
+            {
+              "name": "TU_OFF21-TU_OFF21",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "valueSource": "opc",
+                  "opcItemPath": "ns\u003d1;s\u003d[PLC]TU_OFF21",
+                  "dataType": "Boolean",
+                  "historyProvider": "UMS_DB",
+                  "name": "TU_OFF21",
+                  "historyEnabled": false,
+                  "tagType": "AtomicTag",
+                  "opcServer": "Ignition OPC UA Server"
+                }
+              ]
+            },
+            {
+              "name": "DJ2_OFF38-DJ2_OFF38",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "valueSource": "opc",
+                  "opcItemPath": "ns\u003d1;s\u003d[PLC]DJ2_OFF38",
+                  "dataType": "Boolean",
+                  "historyProvider": "UMS_DB",
+                  "name": "DJ2_OFF38",
+                  "historyEnabled": false,
+                  "tagType": "AtomicTag",
+                  "opcServer": "Ignition OPC UA Server"
+                }
+              ]
+            },
+            {
+              "name": "TU_ON20-TU_ON20",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "valueSource": "opc",
+                  "opcItemPath": "ns\u003d1;s\u003d[PLC]TU_ON20",
+                  "dataType": "Boolean",
+                  "historyProvider": "UMS_DB",
+                  "name": "TU_ON20",
+                  "historyEnabled": false,
+                  "tagType": "AtomicTag",
+                  "opcServer": "Ignition OPC UA Server"
+                }
+              ]
+            },
+            {
+              "name": "DISC_PRESS26-DISC_PRESS26",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "valueSource": "opc",
+                  "opcItemPath": "ns\u003d1;s\u003d[PLC]DISC_PRESS26",
+                  "dataType": "Boolean",
+                  "historyProvider": "UMS_DB",
+                  "alarms": [
+                    {
+                      "mode": "OnCondition",
+                      "name": "Compressor D P",
+                      "label": "Compressor Discharge Pressure",
+                      "priority": "Critical",
+                      "activeCondition": {
+                        "bindType": "Tag",
+                        "value": "[.]DISC_PRESS26.value"
+                      }
+                    }
+                  ],
+                  "name": "DISC_PRESS26",
+                  "historyEnabled": true,
+                  "tagType": "AtomicTag",
+                  "opcServer": "Ignition OPC UA Server"
+                }
+              ]
+            },
+            {
+              "name": "RELAY19-RELAY19",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "valueSource": "opc",
+                  "opcItemPath": "ns\u003d1;s\u003d[PLC]RELAY19",
+                  "dataType": "Boolean",
+                  "historyProvider": "UMS_DB",
+                  "alarms": [
+                    {
+                      "mode": "OnCondition",
+                      "name": "RLY Active",
+                      "label": "Relay Active",
+                      "priority": "Critical",
+                      "activeCondition": {
+                        "bindType": "Tag",
+                        "value": "[.]RELAY19.value"
+                      }
+                    }
+                  ],
+                  "name": "RELAY19",
+                  "historyEnabled": true,
+                  "tagType": "AtomicTag",
+                  "opcServer": "Ignition OPC UA Server"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Device Status",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "valueSource": "expr",
+          "expression": "if({[~]Virtual_Tags/VIRT_CHILLER},\u0027ON\u0027,\u0027OFF\u0027)",
+          "historyProvider": "UMS_DB",
+          "dataType": "String",
+          "sourceTagPath": "[~]Virtual_Tags/VIRT_CHILLER",
+          "name": "Chiller",
+          "historyEnabled": true,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "expr",
+          "expression": "if({[~]Virtual_Tags/VIRT_PUMP},\u0027ON\u0027,\u0027OFF\u0027)",
+          "historyProvider": "UMS_DB",
+          "dataType": "String",
+          "sourceTagPath": "[~]Virtual_Tags/VIRT_PUMP",
+          "name": "Pump\u0027s Chiller",
+          "historyEnabled": true,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "expr",
+          "expression": "if({[~]_PLC_/_Diagnostics_/Connected},\u0027ON\u0027,\u0027OFF\u0027)",
+          "historyProvider": "UMS_DB",
+          "dataType": "String",
+          "sourceTagPath": "[~]Virtual_Tags/VIRT_PLC",
+          "name": "PLC",
+          "historyEnabled": true,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "expr",
+          "expression": "if({[~]Virtual_Tags/VIRT_COMPRESSOR},\u0027ON\u0027,\u0027OFF\u0027)",
+          "historyProvider": "UMS_DB",
+          "dataType": "String",
+          "sourceTagPath": "[~]Virtual_Tags/VIRT_COMPRESSOR",
+          "name": "Compressor",
+          "historyEnabled": true,
+          "tagType": "AtomicTag"
+        }
+      ]
+    },
+    {
+      "name": "EngUnits_VIRT",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "valueSource": "expr",
+          "expression": "(({[.]kW}/{[.]kVA}))",
+          "dataType": "Float4",
+          "historyProvider": "UMS_DB",
+          "alarms": [
+            {
+              "mode": "AboveValue",
+              "setpointA": 1.0,
+              "name": "PF \u003e 1",
+              "label": "Power Factor above limit",
+              "priority": "High"
+            },
+            {
+              "mode": "BelowValue",
+              "name": "PF \u003c 0",
+              "label": "Power Factor below limits",
+              "priority": "High"
+            }
+          ],
+          "name": "FP",
+          "historyEnabled": true,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "expr",
+          "expression": "({[.]TEST_V_480}*{[.]RANDON_I})",
+          "historyProvider": "UMS_DB",
+          "name": "W",
+          "historyEnabled": false,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "expr",
+          "expression": "sin(-36.9)*{[.]kVA}",
+          "historyProvider": "UMS_DB",
+          "name": "kVAr",
+          "historyEnabled": false,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "expr",
+          "expression": "{[System]Gateway/Alarming/Clear and Acked}+{[System]Gateway/Alarming/Clear and Unacked}+{[.]Active Alarms}",
+          "historyProvider": "UMS_DB",
+          "sourceTagPath": "[.]Active Alarms",
+          "name": "All Alarms",
+          "historyEnabled": true,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "expr",
+          "expression": "(sqrt(3)*{[.]TEST_V_480}*{[.]RANDON_I})/1000",
+          "historyProvider": "UMS_DB",
+          "name": "kVA",
+          "historyEnabled": false,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "expr",
+          "expression": "abs(sin(now()*2)*40+100)",
+          "historyProvider": "UMS_DB",
+          "name": "RANDON_I",
+          "historyEnabled": false,
+          "tagType": "AtomicTag",
+          "sampleMode": "OnChange"
+        },
+        {
+          "valueSource": "memory",
+          "historyProvider": "UMS_DB",
+          "alarms": [
+            {
+              "mode": "BelowValue",
+              "setpointA": 473.0,
+              "anyChange": true,
+              "timeOnDelaySeconds": 60.0,
+              "name": "(V) \u003c 10%",
+              "label": "voltage (V) below 10% from limit value ",
+              "priority": "Medium",
+              "ackNotesReqd": false
+            },
+            {
+              "mode": "AboveValue",
+              "setpointA": 12.0,
+              "anyChange": true,
+              "timeOnDelaySeconds": 60.0,
+              "name": "(V) \u003d 0",
+              "label": "voltage (V) \u003d 0V"
+            },
+            {
+              "mode": "AboveValue",
+              "setpointA": 528.0,
+              "anyChange": true,
+              "timeOnDelaySeconds": 60.0,
+              "name": "(V) \u003e 10%",
+              "label": "voltage (V) above 10% from limit value",
+              "priority": "Medium",
+              "displayPath": ""
+            }
+          ],
+          "name": "TEST_V_480",
+          "historyEnabled": true,
+          "value": 480,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "expr",
+          "expression": "{[System]Gateway/Alarming/Active and Acked}+{[System]Gateway/Alarming/Active and Unacked}",
+          "historyProvider": "UMS_DB",
+          "name": "Active Alarms",
+          "historyEnabled": true,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "expr",
+          "expression": "{[.]W}/1000",
+          "historyProvider": "UMS_DB",
+          "name": "kW",
+          "historyEnabled": false,
+          "tagType": "AtomicTag"
+        }
+      ]
+    },
+    {
+      "name": "Meter",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "valueSource": "derived",
+          "historyProvider": "UMS_DB",
+          "sourceTagPath": "[~]EngUnits_VIRT/W",
+          "name": "Power (W)",
+          "historyEnabled": true,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "derived",
+          "deriveExpressionGetter": "{[~]EngUnits_VIRT/RANDON_I}",
+          "historyProvider": "UMS_DB",
+          "name": "Current (I)",
+          "historyEnabled": true,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "derived",
+          "historyProvider": "UMS_DB",
+          "sourceTagPath": "[~]EngUnits_VIRT/kVAr",
+          "name": "Reactive Power (kVAr)",
+          "historyEnabled": true,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "derived",
+          "historyProvider": "UMS_DB",
+          "sourceTagPath": "[~]EngUnits_VIRT/kVA",
+          "name": "Aparent Power (kVA)",
+          "historyEnabled": true,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "expr",
+          "scaleMode": "Off",
+          "expression": "1/100*98",
+          "dataType": "Int4",
+          "historyProvider": "UMS_DB",
+          "sourceTagPath": "[~]EngUnits_VIRT/FP",
+          "name": "Power Factor (PF)",
+          "historyEnabled": true,
+          "deadband": 0.0,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "expr",
+          "expression": "({[default]EngUnits_VIRT/kW}*60)",
+          "historyProvider": "UMS_DB",
+          "name": "Consumption (kWh)",
+          "historyEnabled": true,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "derived",
+          "historyProvider": "UMS_DB",
+          "sourceTagPath": "[~]EngUnits_VIRT/kW",
+          "name": "Power (kW)",
+          "historyEnabled": true,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "derived",
+          "historyProvider": "UMS_DB",
+          "sourceTagPath": "[~]EngUnits_VIRT/TEST_V_480",
+          "name": "Voltage (V)",
+          "historyEnabled": true,
+          "tagType": "AtomicTag"
+        }
+      ]
+    },
+    {
+      "name": "TU and Breakers",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "valueSource": "derived",
+          "historyProvider": "UMS_DB",
+          "sourceTagPath": "[~]Virtual_Tags/VIRT_DJ3",
+          "name": "breaker 3",
+          "historyEnabled": true,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "derived",
+          "historyProvider": "UMS_DB",
+          "sourceTagPath": "[~]Virtual_Tags/VIRT_DJ2",
+          "name": "breaker 2",
+          "historyEnabled": true,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "derived",
+          "historyProvider": "UMS_DB",
+          "sourceTagPath": "[~]Virtual_Tags/VIRT_DJ1",
+          "name": "Breaker 1",
+          "historyEnabled": true,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "derived",
+          "historyProvider": "UMS_DB",
+          "sourceTagPath": "[~]Virtual_Tags/VIRT_TU",
+          "name": "Trip Unit (Closed)",
+          "historyEnabled": true,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "derived",
+          "historyProvider": "UMS_DB",
+          "sourceTagPath": "[~]_PLC_/UnitId 0/TU_TRIP23-TU_TRIP23",
+          "name": "Trip Unit (Trip)",
+          "historyEnabled": true,
+          "tagType": "AtomicTag"
+        }
+      ]
+    },
+    {
+      "name": "Virtual_Tags",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "valueSource": "expr",
+          "expression": "addSeconds({[~]_PLC_/UnitId 0/I_VN18-I_VN18/I_VN18.Timestamp},30)",
+          "dataType": "DateTime",
+          "historyProvider": "UMS_DB",
+          "name": "VIRT_CONT_LOGIC",
+          "historyEnabled": false,
+          "formatString": "yyyy-MM-dd h:mm:ss aa",
+          "value": 1,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "expr",
+          "expression": "if(({[.]VIRT_DJ1}\u003d1)\u0026\u0026\r\n\t({[.]VIRT_LOGIC_2}\u003d0)\u0026\u0026\r\n\t{[~]Meter/Voltage (V)}\u003e400 \u0026\u0026\r\n\t{[~]TU and Breakers/Trip Unit (Closed)},1,0)",
+          "dataType": "Boolean",
+          "historyProvider": "UMS_DB",
+          "name": "VIRT_CHILLER",
+          "historyEnabled": false,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "expr",
+          "expression": "if({[~]_PLC_/_Diagnostics_/Connected}\u0026\u0026\r\n\t{[~]TU and Breakers/Trip Unit (Closed)}\u0026\u0026\r\n\t{[~]TU and Breakers/breaker 3}\u0026\u0026\r\n\t{[~]Meter/Voltage (V)}\u003e400, 1, 0)",
+          "dataType": "Boolean",
+          "historyProvider": "UMS_DB",
+          "name": "VIRT_PLC",
+          "historyEnabled": false,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "expr",
+          "expression": "{[~]_PLC_/UnitId 0/DISC_PRESS26-DISC_PRESS26/DISC_PRESS26.value}||{[~]_PLC_/UnitId 0/TEMP_COMP27-TEMP_COMP27/TEMP_COMP27.value}",
+          "dataType": "Boolean",
+          "historyProvider": "UMS_DB",
+          "name": "VIRT_LOGIC_4",
+          "historyEnabled": false,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "derived",
+          "dataType": "Boolean",
+          "historyProvider": "UMS_DB",
+          "sourceTagPath": "[default]_PLC_/UnitId 0/P_PUMP25-P_PUMP25/P_PUMP25",
+          "name": "VIRT_LOGIC_3",
+          "historyEnabled": false,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "expr",
+          "expression": "if(({[System]Gateway/CurrentDateTime.value}\u003e{[.]VIRT_CONT_LOGIC})\u0026\u0026{[~]_PLC_/UnitId 0/I_VN18-I_VN18/I_VN18},1,0)",
+          "dataType": "Boolean",
+          "historyProvider": "UMS_DB",
+          "name": "VIRT_LOGIC_1",
+          "historyEnabled": false,
+          "formatString": "#,##0.##",
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "expr",
+          "expression": "if(({[.]VIRT_DJ1}\u003d1)\u0026\u0026\r\n\t({[.]VIRT_LOGIC_3}\u003d0)\u0026\u0026\r\n\t{[~]Meter/Voltage (V)}\u003e400 \u0026\u0026\r\n\t{[~]TU and Breakers/Trip Unit (Closed)},1,0)",
+          "dataType": "Boolean",
+          "historyProvider": "UMS_DB",
+          "name": "VIRT_PUMP",
+          "historyEnabled": false,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "derived",
+          "expression": "\u003d{[~]_PLC_/UnitId 0/TEMP_COMP27-TEMP_COMP27/TEMP_COMP27.value}",
+          "dataType": "Boolean",
+          "historyProvider": "UMS_DB",
+          "sourceTagPath": "[~]_PLC_/UnitId 0/TempChiller24-TempChiller24/TempChiller24",
+          "name": "VIRT_LOGIC_2",
+          "historyEnabled": false,
+          "executionMode": "EventDriven",
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "expr",
+          "expression": "if({[.]VIRT_TU}\u003d1 \u0026\u0026\r\n\t{[~]_PLC_/UnitId 0/DJ3_ON42-DJ3_ON42/DJ3_ON42}\u003d1 \u0026\u0026\r\n\t\t{[~]_PLC_/UnitId 0/DJ3_OFF41-DJ3_OFF41/DJ3_OFF41}\u003d0, 1, 0)",
+          "dataType": "Boolean",
+          "historyProvider": "UMS_DB",
+          "name": "VIRT_DJ3",
+          "historyEnabled": false,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "expr",
+          "expression": "if(({[.]VIRT_TU}\u003d1)\u0026\u0026\r\n\t({[~]_PLC_/UnitId 0/DJ1_ON36-DJ1_ON36/DJ1_ON36}\u003d1)\u0026\u0026\r\n\t({[~]_PLC_/UnitId 0/DJ1_OFF35-DJ1_OFF35/DJ1_OFF35}\u003d0),1,0)",
+          "dataType": "Boolean",
+          "historyProvider": "UMS_DB",
+          "name": "VIRT_DJ1",
+          "historyEnabled": false,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "expr",
+          "expression": "if(({[.]VIRT_DJ2}\u003d1)\u0026\u0026\r\n\t({[.]VIRT_LOGIC_4}\u003d0)\u0026\u0026\r\n\t{[~]Meter/Voltage (V)}\u003e400 \u0026\u0026\r\n\t{[~]TU and Breakers/Trip Unit (Closed)},1,0)",
+          "dataType": "Boolean",
+          "historyProvider": "UMS_DB",
+          "name": "VIRT_COMPRESSOR",
+          "historyEnabled": false,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "expr",
+          "expression": "if(({[~]_PLC_/UnitId 0/TU_ON20-TU_ON20/TU_ON20}\u003d1)\u0026\u0026\r\n\t({[~]_PLC_/UnitId 0/TU_OFF21-TU_OFF21/TU_OFF21}\u003d0)\u0026\u0026\r\n\t\t({[~]_PLC_/UnitId 0/RELAY19-RELAY19/RELAY19}\u003d0)\u0026\u0026\r\n\t\t\t({[.]VIRT_LOGIC_1}\u003d0)\u0026\u0026\r\n\t\t\t\t({[~]_PLC_/UnitId 0/TU_TRIP23-TU_TRIP23/TU_TRIP23}\u003d0),1,0)",
+          "dataType": "Boolean",
+          "historyProvider": "UMS_DB",
+          "name": "VIRT_TU",
+          "historyEnabled": false,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "expr",
+          "expression": "if(({[.]VIRT_TU}\u003d1)\u0026\u0026\r\n\t({[~]_PLC_/UnitId 0/DJ2_ON39-DJ2_ON39/DJ2_ON39}\u003d1)\u0026\u0026\r\n\t\t({[~]_PLC_/UnitId 0/DJ2_OFF38-DJ2_OFF38/DJ2_OFF38}\u003d0),1,0)",
+          "dataType": "Boolean",
+          "historyProvider": "UMS_DB",
+          "name": "VIRT_DJ2",
+          "historyEnabled": false,
+          "tagType": "AtomicTag"
+        }
+      ]
+    }
+  ]
+}
